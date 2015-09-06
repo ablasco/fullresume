@@ -2,17 +2,17 @@
   "name": "fullresume",
   "version": "1.0.0",
   "description": "My CV in the JSON-based jsonresume.org format.",
-  "author": "ThibWeb",
+  "author": "Albert Blasco",
   "license": "ISC",
   "private": true,
-  "homepage": "https://github.com/ThibWeb/fullresume",
+  "homepage": "https://github.com/ablasco/fullresume",
   "main": "resume.json",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ThibWeb/fullresume.git"
+    "url": "git@github.com:ablasco/fullresume.git"
   },
   "bugs": {
-    "url": "https://github.com/ThibWeb/fullresume/issues"
+    "url": "https://github.com/ablasco/fullresume/issues"
   },
   "keywords": [
     "cv",
@@ -28,9 +28,9 @@
     "write-good": "^0.8.0"
   },
   "scripts": {
-    "start": "resume serve",
+    "start": "resume serve --theme eloquent",
     "test": "resume test",
-    "lint": "write-good --no-adverb --no-passive --no-weasel resume.json && ./rank-writing.py --aspell --diction resume.json",
+    "lint": "write-good --no-adverb --no-passive --no-weasel resume.json",
     "export": "node index.js"
   }
 }
